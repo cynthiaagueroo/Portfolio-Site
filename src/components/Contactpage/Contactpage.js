@@ -6,19 +6,18 @@ function Contactpage() {
   return (
     <div className='contactbackground'>
       <Container>
-        <h2 className='contacthead'>Get In Touch</h2>
-        <p className='contactpara'> I’m currently searching for opportunities for a front-end developer role. <br /> If there is any vacancy my inbox is always open. Whether <br /> you have any further questions or just want to say hi, <br /> I’ll try my best to get back to you!</p>
+        <h2 className='contacthead'>Contact me</h2>
+        <p className='contactpara'> I’m currently searching for internship opportunities. 
+          <br /> If you would like to be in touch, my inbox is always open! ':]'
+        </p>
         <button
           className='contactbtn'
           onClick={() => {
-            window.open("https://wa.me/+918156811884");
+            window.open("https://mail.google.com/mail/?view=cm&fs=1&to=cynthiaaguero02@gmail.com");
           }}
-        >Say Hello</button>
+        >Press me !</button>
         <span></span>
-        <hr className='line' />
-        <p className='copyright'>© Copyright 2023.
-        <br /> 
-        Designed & Built by <span>rahulvijay</span></p>
+
       </Container>
     </div>
   )
