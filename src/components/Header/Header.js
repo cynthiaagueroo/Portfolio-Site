@@ -58,7 +58,7 @@ function Header() {
             </Nav.Link>
           </Nav.Item>
 
-          <Nav.Item>
+          {/* <Nav.Item>
             <Nav.Link
               as={Link}
               to="/project"
@@ -66,7 +66,7 @@ function Header() {
             >
               Projects
             </Nav.Link>
-          </Nav.Item>
+          </Nav.Item> */}
 
           <Nav.Item>
             <Nav.Link

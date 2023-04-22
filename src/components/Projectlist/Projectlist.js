@@ -25,7 +25,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={olximage}
                 isBlog={false}
@@ -33,9 +33,9 @@ function Projectlist() {
                 description="N/A"
                 ghLink="https://olx-clone-rahul.netlify.app/"
               />
-            </Col>
+            </Col> */}
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={netfliximage}
                 isBlog={false}
@@ -43,9 +43,9 @@ function Projectlist() {
                 description="N/A"
                 ghLink="https://react-rahul-netflix-clone.netlify.app/"
               />
-            </Col>
+            </Col> */}
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={gridlinesbuilders}
                 isBlog={false}
@@ -53,9 +53,9 @@ function Projectlist() {
                 description="N/A"
                 ghLink="https://gridlinesbuilders.in/"
               />
-            </Col>
+            </Col> */}
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={charlespizza}
                 isBlog={false}
@@ -63,9 +63,9 @@ function Projectlist() {
                 description="N/A"
                 ghLink="https://rahulvijay81.github.io/Pizzastore-bootstrap/"
               />
-            </Col>
+            </Col> */}
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={todolist}
                 isBlog={false}
@@ -74,7 +74,7 @@ function Projectlist() {
                 ghLink="https://todolist-rahul81.netlify.app/"
 
               />
-            </Col>
+            </Col> */}
   
           </Row>
         </Container>
