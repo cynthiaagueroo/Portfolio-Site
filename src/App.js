@@ -11,33 +11,33 @@ import Contact from './pages/Contact';
 
 function App() {
   const [load, upadateLoad] = useState(true);
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0
-  });
-  console.log(mousePosition);
+  // const [mousePosition, setMousePosition] = useState({
+  //   x: 0,
+  //   y: 0
+  // });
+  // console.log(mousePosition);
 
-  useEffect(() => {
-    const mouseMove = e => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY
-      })
-    }
+  // useEffect(() => {
+  //   const mouseMove = e => {
+  //     setMousePosition({
+  //       x: e.clientX,
+  //       y: e.clientY
+  //     })
+  //   }
 
-    window.addEventListener("mousemove", mouseMove);
+  //   window.addEventListener("mousemove", mouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    }
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("mousemove", mouseMove);
+  //   }
+  // }, []);
 
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16
-    }
-  }
+  // const variants = {
+  //   default: {
+  //     x: mousePosition.x - 16,
+  //     y: mousePosition.y - 16
+  //   }
+  // }
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -51,7 +51,7 @@ function App() {
     <div className="App">
       <motion.div
         className="cursor"
-        variants={variants}
+        //variants={variants}
         animate="default"
       />
       <Router>
