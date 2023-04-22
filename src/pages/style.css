@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Labrada&display=swap");
 
 /* Header style */
-
+body {
+  
+ background-color: pink;
+}
 .navbar {
   width: 100%;
   height: 100px;
