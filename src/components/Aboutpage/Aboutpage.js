@@ -28,7 +28,7 @@ function Aboutpage() {
                                 </Col>
                                 <Col md={5}>
                                     <li>C</li>
-                                    <li>Tableu</li>
+                                    <li>Tableu </li>
                                     <li>Git/Github</li>
                                     <li>Verilog</li>
                                 </Col>
