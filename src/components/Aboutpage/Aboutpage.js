@@ -30,6 +30,7 @@ function Aboutpage() {
                                     <li>C</li>
                                     <li>Tableu</li>
                                     <li>Git/Github</li>
+                                    <li>Verilog</li>
                                 </Col>
                             </Row>
                         </ul>
