@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Button, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../pages/style.css';
 import { Container } from 'react-bootstrap';
@@ -21,6 +19,7 @@ function Header() {
   window.addEventListener('scroll', scrollHandler);
 
   return (
+    // Navigation Bar component
     <Navbar
       expanded={expand}
       fixed="top"
@@ -45,18 +44,20 @@ function Header() {
 
       <Navbar.Collapse id="responsive-navbar-nav" className='responsive-navbar'>
         <Nav className="ms-auto" defaultActiveKey="#home">
-        <Nav.Item>
+          {/* Navigation links */}
+          <Nav.Item>
             <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}> Home </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}> About </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            {/* <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}> Projects </Nav.Link> */}
-          </Nav.Item> 
+          {/* <Nav.Item>
+            <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}> Projects </Nav.Link>
+          </Nav.Item> */}
           <Nav.Item>
             <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}> Contact </Nav.Link>
           </Nav.Item>
+          {/* Resume button */}
           <Button
             onClick={() => {
               window.open('https://drive.google.com/file/d/1fH0jaD1uRP9Q9mdSaxMmeSoCfMVh02_u/view?usp=sharing');
@@ -74,11 +75,15 @@ function Header() {
 function Contact() {
   return (
     <div>
+      {/* Header component */}
       <Header />
       <div className='contactbackground'>
         <Container>
+          {/* Contact heading */}
           <h2 className='contacthead'>Contact me</h2>
+          {/* Contact information */}
           <p className='contactpara'> I’m currently searching for internship opportunities. <br /> If you would like to be in touch, my inbox is always open! :]</p>
+          {/* Contact button */}
           <button
             className='contactbtn'
             onClick={() => {

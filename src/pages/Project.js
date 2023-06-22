@@ -3,12 +3,11 @@ import { Button } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import '../pages/style.css';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
 import Card from "react-bootstrap/Card";
+import '../pages/style.css';
 
-
-
+// Project Card component
 function ProjectCard(props) {
   return (
     <Card className="project-card-view">
@@ -24,7 +23,6 @@ function ProjectCard(props) {
         {"\n"}
         {"\n"}
 
-
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -32,7 +30,6 @@ function ProjectCard(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-
             {"Demo"}
           </Button>
         )}
@@ -41,7 +38,8 @@ function ProjectCard(props) {
   );
 }
 
-function Projectlist() {
+// Project list component
+function ProjectList() {
   return (
     <div className="projectbackground">
       <Container fluid className="project-section">
@@ -49,7 +47,6 @@ function Projectlist() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
-              
                 // imgPath={useradminpanel}
                 isBlog={false}
                 title="N/A"
@@ -76,7 +73,7 @@ function Projectlist() {
                 description="N/A"
                 ghLink="https://react-rahul-netflix-clone.netlify.app/"
               />
-            </Col> 
+            </Col>
 
             <Col md={4} className="project-card">
               <ProjectCard
@@ -105,10 +102,9 @@ function Projectlist() {
                 title="N/A"
                 description="N/A"
                 ghLink="https://todolist-rahul81.netlify.app/"
-
               />
             </Col>
-  
+
           </Row>
         </Container>
       </Container>
@@ -116,7 +112,7 @@ function Projectlist() {
   )
 }
 
-
+// Header component with navigation
 function Header() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -164,7 +160,7 @@ function Header() {
           </Nav.Item>
           <Nav.Item>
             <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}> Projects </Nav.Link>
-          </Nav.Item> 
+          </Nav.Item>
           <Nav.Item>
             <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}> Contact </Nav.Link>
           </Nav.Item>
@@ -182,13 +178,14 @@ function Header() {
   );
 }
 
+// Project component
 function Project() {
   return (
     <div>
       <Header />
-      <Projectlist />
+      <ProjectList />
     </div>
   )
 }
 
-export default Project
+export default Project;

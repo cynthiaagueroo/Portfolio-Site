@@ -3,11 +3,11 @@ import { Button } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import '../pages/style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Typewriter from "typewriter-effect";
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiFillGithub } from 'react-icons/ai';
+import '../pages/style.css';
 
 // Typewriter component for text animation
 function Text() {
@@ -69,18 +69,20 @@ function Header() {
 
       <Navbar.Collapse id="responsive-navbar-nav" className='responsive-navbar'>
         <Nav className="ms-auto" defaultActiveKey="#home">
-        <Nav.Item>
+          {/* Navigation links */}
+          <Nav.Item>
             <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}> Home </Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}> About </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            {/* <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}> Projects </Nav.Link> */}
-          </Nav.Item> 
+          {/* <Nav.Item>
+            <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}> Projects </Nav.Link>
+          </Nav.Item> */}
           <Nav.Item>
             <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}> Contact </Nav.Link>
           </Nav.Item>
+          {/* Resume button */}
           <Button
             onClick={() => {
               window.open('https://drive.google.com/file/d/1fH0jaD1uRP9Q9mdSaxMmeSoCfMVh02_u/view?usp=sharing');
@@ -99,15 +101,20 @@ function Header() {
 function Home() {
   return (
     <div>
+      {/* Header component */}
       <Header />
       <div className='homepagebackground'>
         <Container>
           <Row>
             <Col md={7}>
-              <h2 className='headtext'>Hello ! <span className='wave'>👋🏼</span></h2>
+              {/* Greeting */}
+              <h2 className='headtext'>Hello! <span className='wave'>👋🏼</span></h2>
+              {/* Name */}
               <h2 className='nametext'>I'm Cynthia Agüero</h2>
               <span></span>
+              {/* Typewriter effect */}
               <Text />
+              {/* Social media buttons */}
               <button onClick={() => { window.open("https://github.com/cynthiaaguero"); }} className='socailmediabtn'>
                 <AiFillGithub className='icon' />
               </button>
@@ -116,6 +123,7 @@ function Home() {
               </button>
             </Col>
             <Col md={5}>
+              {/* Developer image */}
               <div className="imagedeveloper"></div>
             </Col>
           </Row>
