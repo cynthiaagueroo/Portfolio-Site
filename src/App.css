@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
+/* Fonts and body */
 body {
   font-family: "Raleway", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+/* Reset and default styles */
+html,
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Preloader styles */
 #preloader {
   position: fixed;
   top: 0;
@@ -23,7 +28,6 @@ html {
   height: 100%;
   z-index: 999999;
   background-color: #ff61a5;
-  background-image: url(../src/Assets/bars.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -32,6 +36,7 @@ html {
   opacity: 0;
 }
 
+/* Scrollbar styles */
 /* Track */
 ::-webkit-scrollbar-track {
   background: #c05ab9cb;
@@ -49,6 +54,7 @@ html {
   border-radius: 12px;
 }
 
+/* Responsive styles for cursor */
 @media (max-width: 767px) {
   .cursor {
     display: none;
