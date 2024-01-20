@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from "react-bootstrap/Card";
 import '../pages/style.css';
+import bitebuddy from '../Assets/bitebuddy.png'
 
 // Project Card component
 function ProjectCard(props) {
@@ -47,7 +48,7 @@ function ProjectList() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
               <ProjectCard
-                // imgPath={useradminpanel}
+                imgPath={bitebuddy}
                 isBlog={false}
                 title="N/A"
                 description="N/A"
