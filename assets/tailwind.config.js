@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       colors: {
         backgroundPink: "#ff69b4",
+        backgroundLightPink: "#ffc4e2",
         brand: "#FD4F00",
       }
     },
@@ -70,6 +71,7 @@ module.exports = {
           }
         }
       }, {values})
-    })
+    }),
+    require("daisyui")
   ]
 }
